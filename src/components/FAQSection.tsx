@@ -7,24 +7,28 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      question: "What are dental implants?",
-      answer: "Dental implants are titanium posts surgically placed into the jawbone to replace missing tooth roots. They provide a strong foundation for fixed or removable replacement teeth that look, feel, and function like natural teeth."
+      question: "What is Invisalign and how does it work?",
+      answer: "Invisalign uses a series of clear, removable aligners to gradually straighten your teeth. Each set is worn for about 1-2 weeks and works by applying precise, controlled pressure to move teeth into their ideal positions without the need for metal wires or brackets."
     },
     {
-      question: "How long do dental implants last?",
-      answer: "With proper care and regular dental checkups, dental implants can last 15 years or more, and in many cases, they last a lifetime. Good oral hygiene and healthy gums are key to long-term success."
+      question: "How long does orthodontic treatment usually take?",
+      answer: "Treatment duration varies based on complexity, but most cases range from 6 to 18 months for aligners, and 12 to 24 months for traditional braces. During your consultation with Dr. K. Purnasri, we'll provide a customized timeline for your specific smile."
     },
     {
-      question: "Are dental implants painful?",
-      answer: "Most patients experience minimal discomfort during and after the procedure. Local anesthesia or sedation is used to ensure comfort, and mild soreness afterward can be managed with prescribed pain medication."
+      question: "Am I too old for braces or Invisalign?",
+      answer: "Absolutely not! Orthodontic treatment is effective at any age as long as your gums and bone structure are healthy. Many of our patients are adults seeking a more confident, professional smile with discreet options like Invisalign."
     },
     {
-      question: "Who is a good candidate for dental implants?",
-      answer: "Ideal candidates are individuals with healthy gums, sufficient bone density, and good overall health. Even if you’ve experienced bone loss, advanced options like bone grafting can make implants possible."
+      question: "How often do I need to visit the clinic during treatment?",
+      answer: "With our specialist-driven approach, we typically see Invisalign patients every 6-8 weeks and braces patients every 4-6 weeks to monitor progress and provide your next sets of aligners or make adjustments."
     },
     {
-      question: "How do I care for dental implants?",
-      answer: "Dental implants require the same care as natural teeth — brushing twice daily, flossing regularly, and routine dental checkups. Avoid smoking and maintain good oral hygiene to extend their lifespan."
+      question: "Do clear aligners really work as well as metal braces?",
+      answer: "Yes, for the vast majority of cases. Invisalign technology has advanced significantly and can treat crowding, spacing, overbites, and underbites with the same precision as traditional braces, while offering better comfort and aesthetics."
+    },
+    {
+      question: "How do I maintain my smile after treatment?",
+      answer: "After your active treatment is finished, you'll wear a retainer to keep your teeth in their new positions. We provide high-quality custom retainers and long-term follow-up to ensure your beautiful results last a lifetime."
     }
   ];
 
@@ -36,7 +40,7 @@ export default function FAQSection() {
     <section className="p-4 md:p-8 lg:p-12">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-xl md:text-3xl font-bold text-center mb-6">
-          Frequently Asked Questions about Dental Implants
+          🦷 General FAQ Questions
         </h2>
 
         <div className="space-y-4">

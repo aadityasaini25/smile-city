@@ -18,8 +18,8 @@ export default function DoctorProfile({ onBookAppointment }: DoctorProfileProps)
           <div className="w-full md:w-1/3 flex justify-center">
             <div className="relative w-72 h-72 md:w-full md:max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-white ring-1 ring-gray-100">
               <Image
-                src="/images/doctor/WhatsApp Image 2026-02-10 at 23.08.30.jpeg"
-                alt="Dr. Gurkeerat Singh"
+                src="/images/smile.jpg"
+                alt="Dr. K. Purnasri"
                 fill
                 className="object-cover"
               />
@@ -29,27 +29,24 @@ export default function DoctorProfile({ onBookAppointment }: DoctorProfileProps)
           {/* Content Side */}
           <div className="w-full md:w-2/3 text-center md:text-left">
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-              Dr. Gurkeerat Singh
+              Dr. K. Purnasri
             </h3>
             <p className="text-[#1a897f] font-bold text-lg uppercase tracking-wider mb-6">
-              Orthodontist & Implantologist
+              Orthodontics (Aligner Specialist, Invisalign Certified Provider)
             </p>
 
             <div className="space-y-4 text-gray-600 text-lg leading-relaxed font-light">
               <p>
-                <strong>MDS - MCODS MANGALORE, BDS - MCODS MANGALORE</strong>
+                <strong>MDS Orthodontist, Aligner Specialist & Invisalign Certified</strong>
               </p>
               <p>
-                With over <strong className="text-gray-900">28 years of experience</strong>, Dr. Gurkeerat Singh is a distinguished prominent figure in the field of Orthodontics and Implantology.
+                With over <strong className="text-gray-900">8 years of experience post BDS</strong>, Dr. K. Purnasri is a dedicated specialist providing precision-driven orthodontic care.
               </p>
               <p>
-                He holds the prestigious title of <strong>M.Orth</strong> from the <strong>Royal College of Surgeons, London</strong> & the <strong>Royal College of Physicians and Surgeons of Glasgow</strong>. He is also a <strong>Diplomate of the Indian Board of Orthodontics</strong>.
-              </p>
-              <p className="italic text-gray-500 border-l-4 border-[#1a897f] pl-4 my-6">
-                Registration No: A-3973
+                At <strong>SmileCity Orthodontic and Dental Clinic</strong>, we follow a specialist-driven practice model, ensuring you receive direct care from the lead doctor throughout your treatment journey.
               </p>
               <p>
-                Dedicated to providing world-class dental care, he specializes in creating beautiful, functional smiles using the latest advancements in orthodontic and implant technology. His approach combines clinical precision with compassionate patient care.
+                Specializing in creating beautiful, functional smiles using the latest advancements in aligner technology and traditional orthodontics. Her approach combines clinical excellence with personalized patient care.
               </p>
             </div>
 

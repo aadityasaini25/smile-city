@@ -1,100 +1,15 @@
 import Image from 'next/image';
-import { useRef, useEffect, useState } from 'react';
 
 interface ClinicPhotosProps {
   onBookAppointment: () => void;
 }
 
-const PanoramaViewer = ({ src, alt }: { src: string, alt: string }) => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [scrollLeft, setScrollLeft] = useState(0);
-
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-
-    // Auto-scroll animation
-    let animationId: number;
-    const animate = () => {
-      if (!isDragging) {
-        container.scrollLeft += 1;
-        if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
-          container.scrollLeft = 0;
-        }
-      }
-      animationId = requestAnimationFrame(animate);
-    };
-    animationId = requestAnimationFrame(animate);
-
-    return () => cancelAnimationFrame(animationId);
-  }, [isDragging]);
-
-  const handleMouseDown = (e: React.MouseEvent) => {
-    setIsDragging(true);
-    if (containerRef.current) {
-      setStartX(e.pageX - containerRef.current.offsetLeft);
-      setScrollLeft(containerRef.current.scrollLeft);
-    }
-  };
-
-  const handleMouseLeave = () => {
-    setIsDragging(false);
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (!isDragging || !containerRef.current) return;
-    e.preventDefault();
-    const x = e.pageX - containerRef.current.offsetLeft;
-    const walk = (x - startX) * 2; // Scroll-fast
-    containerRef.current.scrollLeft = scrollLeft - walk;
-  };
-
-  return (
-    <div
-      ref={containerRef}
-      className="relative w-full h-64 md:h-80 lg:h-96 overflow-hidden rounded-2xl cursor-grab active:cursor-grabbing border border-gray-200 shadow-lg"
-      onMouseDown={handleMouseDown}
-      onMouseLeave={handleMouseLeave}
-      onMouseUp={handleMouseUp}
-      onMouseMove={handleMouseMove}
-    >
-      <div className="absolute top-4 left-4 bg-black/50 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm z-10 font-bold uppercase tracking-wider">
-        360° View
-      </div>
-      <div className="w-[200%] h-full relative">
-        {/* Using a wider container to simulate panorama */}
-        <Image
-          src={src}
-          alt={alt}
-          fill
-          className="object-cover"
-          priority
-          quality={100}
-          unoptimized
-        />
-      </div>
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-0 hover:opacity-100 transition-opacity duration-300">
-        <span className="text-white text-4xl drop-shadow-md">↔</span>
-      </div>
-    </div>
-  );
-};
-
 export default function ClinicPhotos({ onBookAppointment }: ClinicPhotosProps) {
-  const regularPhotos = [
-    '/images/clinic/2021-02-11.jpg',
-    '/images/clinic/2021-02-11-2.jpg'
-  ];
-
-  const panoramicPhotos = [
-    '/images/clinic/unnamed.jpg',
-    '/images/clinic/unnamed-2.jpg'
+  const allPhotos = [
+    { src: '/images/2.jpg', alt: 'Clinic Interior 1' },
+    { src: '/images/I.jpg', alt: 'Clinic Interior 2' },
+    { src: '/images/Lab.jpg', alt: 'Clinic Lab Area' },
+    { src: '/images/WhatsApp Image 2025-10-15 at 16.40.24_8b48c6f6.jpg', alt: 'Clinic Equipment' }
   ];
 
   return (
@@ -103,29 +18,28 @@ export default function ClinicPhotos({ onBookAppointment }: ClinicPhotosProps) {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-64 bg-gradient-to-b from-white to-transparent pointer-events-none"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 text-gray-900 tracking-tight">Our <span className="text-gradient-gold">State-of-the-Art</span> Clinic</h2>
-
-        {/* Regular Photos */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-8">
-          {regularPhotos.map((img, i) => (
-            <div
-              key={i}
-              className="group bg-white rounded-2xl h-64 md:h-80 lg:h-96 relative overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100"
-            >
-              <Image
-                src={img}
-                alt={`Clinic Photo ${i + 1}`}
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-            </div>
-          ))}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900 tracking-tight">Our <span className="text-gradient-gold">State-of-the-Art</span> Clinic</h2>
+          <div className="w-24 h-1 bg-[#1a897f] mx-auto rounded-full mb-6"></div>
+          <p className="text-gray-600 max-w-2xl mx-auto">Experience comfort and precision in our modern facility designed for your best smile journey.</p>
         </div>
 
-        {/* 360 Photos */}
+        {/* Unified Photo Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-12">
-          {panoramicPhotos.map((img, i) => (
-            <PanoramaViewer key={i} src={img} alt={`Clinic 360 View ${i + 1}`} />
+          {allPhotos.map((img, i) => (
+            <div
+              key={i}
+              className="group bg-white rounded-3xl h-64 md:h-80 lg:h-[400px] relative overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100"
+            >
+              <Image
+                src={img.src}
+                alt={img.alt}
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                quality={90}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            </div>
           ))}
         </div>
 
@@ -134,7 +48,7 @@ export default function ClinicPhotos({ onBookAppointment }: ClinicPhotosProps) {
             onClick={onBookAppointment}
             className="bg-brandBlue text-white py-4 px-12 rounded-full font-bold text-lg hover:bg-blue-700 hover:shadow-lg transition-all shadow-md transform hover:-translate-y-1"
           >
-            Book Appointment
+            Schedule a Visit
           </button>
         </div>
       </div>

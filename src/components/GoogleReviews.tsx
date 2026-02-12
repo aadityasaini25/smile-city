@@ -3,28 +3,28 @@ import Image from "next/image";
 export default function GoogleReviews() {
   const reviews = [
     {
-      name: "Vishal Rya",
-      initials: "VR",
+      name: "Priya Sharma",
+      initials: "PS",
       date: "6 months ago",
-      review: "Very good treatment with outstanding standard of care. Dr. Gurkeerat explains the treatment in detail and I had a pain free experience."
+      review: "Dr. Purna Sri is absolutely amazing! I was terrified of dental procedures, but she made me feel so comfortable. My Invisalign treatment was completed in just 8 months and the results are incredible. The clinic is spotless and the staff is so caring."
     },
     {
-      name: "Rahul Raj",
-      initials: "RR",
+      name: "Meera Jain",
+      initials: "MJ",
       date: "1 months ago",
-      review: "I had a wonderful experience with Dr. Gurkeerat Singh. He is extremely professional, knowledgeable, and patient. He explained the entire treatment plan clearly and made me feel completely at ease. My dental implant procedure was smooth and painless. Highly recommended for anyone looking for expert dental care!."
+      review: "Child-friendly environment made my 7-year-old daughter's visit stress-free. The pediatric team is wonderful and she actually looks forward to her dental visits now! They make it fun for kids."
     },
     {
-      name: "diwakar kumar",
-      initials: "DK",
+      name: "Amit Verma",
+      initials: "AV",
       date: "8 months ago",
-      review: "Dr. Gurkeerat Singh is truly an expert in his field! I had a complex dental issue, and he explained everything clearly and made me feel completely at ease. The treatment was smooth, painless, and the results were amazing. Highly recommend him for anyone looking for quality dental care!"
+      review: "Excellent orthodontic treatment! My braces journey was smooth and the results are perfect. The team monitored my progress closely and adjusted treatment as needed. Very satisfied with the outcome."
     },
     {
-      name: "Rahul Ravidas",
-      initials: "RR",
+      name: "Vikram Singh",
+      initials: "VS",
       date: "6 months ago",
-      review: "Highly satisfied with the dental care provided by Dr. Gurkeerat Singh. He listens carefully, gives honest advice, and performs the treatment with precision. My smile has never looked better! Truly the best dentist I’ve ever visited."
+      review: "Professional, clean, and modern clinic. Got my dental implants here and the entire process was smooth. Dr. Purna Sri is highly skilled and the results look completely natural. Worth every penny!"
     }
   ];
 

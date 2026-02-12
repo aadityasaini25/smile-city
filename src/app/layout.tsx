@@ -8,32 +8,32 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "D32 The Dental Centre | Best Orthodontist & Implantologist in South Extension, Delhi",
-  description: "Dr. Gurkeerat Singh - Orthodontist & Implantologist. Specialized in Orthodontics & Dentofacial Orthopedics. Located at E-90, South Extension Part I, New Delhi.",
-  keywords: "Dr. Gurkeerat Singh, Orthodontist, Implantologist, D32 The Dental Centre, Dental Clinic South Extension, Delhi Dentist, Braces, Implants",
-  authors: [{ name: "Dr. Gurkeerat Singh" }],
-  creator: "D32 The Dental Centre",
-  publisher: "D32 The Dental Centre",
+  title: "SmileCity Orthodontic and Dental Clinic | Best Orthodontist in Gurgaon, Haryana",
+  description: "Dr. K. Purnasri - MDS Orthodontist & Aligner Specialist. Invisalign Certified Provider. Located at Sector 65, Gurgaon. Specialist-driven orthodontic care.",
+  keywords: "Dr. K. Purnasri, Orthodontist, Aligner Specialist, Invisalign Gurgaon, SmileCity Orthodontic and Dental Clinic, Sector 65 Gurgaon Dentist, Braces",
+  authors: [{ name: "Dr. K. Purnasri" }],
+  creator: "SmileCity Orthodontic and Dental Clinic",
+  publisher: "SmileCity Orthodontic and Dental Clinic",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://d32thedentalcentre.com/'), // Hypothetical URL
+  metadataBase: new URL('https://smilecitygurgaon.com/'), // Updated URL
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: "D32 The Dental Centre | Expert Orthodontic & Implant Care",
-    description: "Dr. Gurkeerat Singh - 28 Years Experience. E-90, South Extension Part I, New Delhi.",
-    url: 'https://d32thedentalcentre.com/',
-    siteName: "D32 The Dental Centre",
+    title: "SmileCity Orthodontic and Dental Clinic | Expert Orthodontic Care",
+    description: "Dr. K. Purnasri - 8+ Years Experience. M3M 65th Avenue, Sector 65, Gurgaon.",
+    url: 'https://smilecitygurgaon.com/',
+    siteName: "SmileCity Orthodontic and Dental Clinic",
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: "D32 The Dental Centre",
+        alt: "SmileCity Orthodontic and Dental Clinic",
       },
     ],
     locale: 'en_IN',
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "D32 The Dental Centre",
-    description: "Expert Orthodontic & Implant Care in New Delhi",
+    title: "SmileCity Orthodontic and Dental Clinic",
+    description: "Expert Orthodontic Care in Gurgaon",
     images: ['/og-image.jpg'],
   },
   robots: {

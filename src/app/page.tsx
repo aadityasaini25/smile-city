@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 // Import all components
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import ImplantTypes from "@/components/ImplantTypes";
+import OrthodonticTypes from "@/components/OrthodonticTypes";
 import BeforeAfterGallery from "@/components/BeforeAfterGallery";
 import CTABox from "@/components/CTABox";
 import GoogleReviews from "@/components/GoogleReviews";
@@ -18,6 +18,7 @@ import Footer from "@/components/Footer";
 import PopupForm from "@/components/PopupForm";
 import StickyCTA from "@/components/StickyCTA";
 import AboutSection from "@/components/AboutSection";
+import ServicesSection from "@/components/ServicesSection";
 
 export default function Home() {
   const [showStickyCta, setShowStickyCta] = useState(false);
@@ -105,7 +106,8 @@ export default function Home() {
         <Header onBookAppointment={openPopup} />
         <HeroSection onBookAppointment={openPopup} />
         <AboutSection />
-        <ImplantTypes />
+        <OrthodonticTypes />
+        <ServicesSection />
         <BeforeAfterGallery onBookAppointment={openPopup} />
         <CTABox onBookAppointment={openPopup} />
         <GoogleReviews />

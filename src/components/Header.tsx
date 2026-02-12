@@ -10,8 +10,8 @@ export default function Header({ onBookAppointment }: HeaderProps) {
       <div className="text-center max-w-7xl mx-auto md:flex md:items-center md:justify-between md:text-left">
         <div className="md:flex md:items-center md:gap-4">
           <Image
-            src="/images/d32logo.png"
-            alt="D32 The Dental Centre Logo"
+            src="/images/side board.png"
+            alt="SmileCity Orthodontic and Dental Clinic Logo"
             width={160}
             height={40}
             className="h-auto mx-auto mb-2 md:mb-0 md:mx-0 hover:scale-105 transition-transform duration-300"
@@ -24,7 +24,7 @@ export default function Header({ onBookAppointment }: HeaderProps) {
           >
             <span className="mr-1 text-lg">📍</span>
             <span className="border-b border-transparent hover:border-[#1a897f] transition-all">
-              D32 The Dental Centre, E-90, South Extension Part I, New Delhi – 110049
+              SmileCity Orthodontic and Dental Clinic, M3M 65th Avenue, Sector 65, Gurgaon
             </span>
           </a>
         </div>
@@ -36,7 +36,7 @@ export default function Header({ onBookAppointment }: HeaderProps) {
             Book Appointment
           </button>
           <a
-            href="tel:+919811063930"
+            href="tel:+919211663616"
             className="bg-white text-blue-700 border-2 border-blue-600 px-6 py-2 rounded-full font-bold shadow-md hover:shadow-lg hover:bg-blue-50 hover:scale-105 transition-all duration-300 text-xs tracking-wider uppercase text-center"
           >
             Call Now
