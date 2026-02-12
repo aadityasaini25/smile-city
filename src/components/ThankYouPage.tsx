@@ -19,18 +19,18 @@ export default function ThankYouPage() {
           <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
             <div className="w-48 h-48 relative rounded-full overflow-hidden border-4 border-gray-200">
               <Image
-                src="/docc.jpg"
-                alt="Dr. Pooja Sharma"
+                src="/images/smile.jpg"
+                alt="Dr. K. Purnasri"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
             <div className="text-center md:text-left">
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
-                Dr. Pooja Sharma
+                Dr. K. Purnasri
               </h2>
               <p className="text-[#01659e] font-medium mb-4">
-                Certified Implantologist & Principal Dentist
+                Orthodontics (Aligner Specialist, Invisalign Certified Provider)
               </p>
               <p className="text-gray-600 max-w-lg">
                 Our team will review your appointment request and contact you shortly to confirm the details.
