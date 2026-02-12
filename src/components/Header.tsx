@@ -20,10 +20,10 @@ export default function Header({ onBookAppointment }: HeaderProps) {
             href="https://maps.app.goo.gl/eb46A5CcHnRcx68n6" // Keep or update map link later if provided, now just text
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium text-gray-700 mb-4 md:mb-0 hover:text-[#1a897f] transition-colors cursor-pointer block tracking-wide"
+            className="text-sm font-medium text-gray-700 mb-4 md:mb-0 hover:text-[#5B216E] transition-colors cursor-pointer block tracking-wide"
           >
             <span className="mr-1 text-lg">📍</span>
-            <span className="border-b border-transparent hover:border-[#1a897f] transition-all">
+            <span className="border-b border-transparent hover:border-[#5B216E] transition-all">
               SmileCity Orthodontic and Dental Clinic, M3M 65th Avenue, Sector 65, Gurgaon
             </span>
           </a>
@@ -37,7 +37,7 @@ export default function Header({ onBookAppointment }: HeaderProps) {
           </button>
           <a
             href="tel:+919211663616"
-            className="bg-white text-blue-700 border-2 border-blue-600 px-6 py-2 rounded-full font-bold shadow-md hover:shadow-lg hover:bg-blue-50 hover:scale-105 transition-all duration-300 text-xs tracking-wider uppercase text-center"
+            className="bg-white text-blue-700 border-2 border-blue-600 px-6 py-2 rounded-full font-bold shadow-md hover:shadow-lg hover:bg-purple-50 hover:scale-105 transition-all duration-300 text-xs tracking-wider uppercase text-center"
           >
             Call Now
           </a>

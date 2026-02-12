@@ -20,7 +20,7 @@ export default function ClinicPhotos({ onBookAppointment }: ClinicPhotosProps) {
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900 tracking-tight">Our <span className="text-gradient-gold">State-of-the-Art</span> Clinic</h2>
-          <div className="w-24 h-1 bg-[#1a897f] mx-auto rounded-full mb-6"></div>
+          <div className="w-24 h-1 bg-[#5B216E] mx-auto rounded-full mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">Experience comfort and precision in our modern facility designed for your best smile journey.</p>
         </div>
 
@@ -46,7 +46,7 @@ export default function ClinicPhotos({ onBookAppointment }: ClinicPhotosProps) {
         <div className="text-center">
           <button
             onClick={onBookAppointment}
-            className="bg-brandBlue text-white py-4 px-12 rounded-full font-bold text-lg hover:bg-blue-700 hover:shadow-lg transition-all shadow-md transform hover:-translate-y-1"
+            className="bg-[#5B216E] text-white py-4 px-12 rounded-full font-bold text-lg hover:bg-blue-700 hover:shadow-lg transition-all shadow-md transform hover:-translate-y-1"
           >
             Schedule a Visit
           </button>

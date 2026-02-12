@@ -139,7 +139,7 @@ export default function PopupForm({ isOpen, onClose, minutes, seconds }: PopupFo
 
           <button
             type="submit"
-            className="w-full bg-brandBlue text-white py-3 md:py-4 rounded-lg font-bold text-lg hover:opacity-90 transition-colors"
+            className="w-full bg-[#5B216E] text-white py-3 md:py-4 rounded-lg font-bold text-lg hover:opacity-90 transition-colors"
           >
             Book Appointment
           </button>

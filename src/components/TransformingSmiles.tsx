@@ -66,7 +66,7 @@ export default function TransformingSmiles({ onBookAppointment }: TransformingSm
               Your browser does not support the video tag.
             </video>
           </div>
-          <button onClick={onBookAppointment} className="bg-brandBlue text-white py-3 px-6 rounded-lg font-bold w-full mb-2">
+          <button onClick={onBookAppointment} className="bg-[#5B216E] text-white py-3 px-6 rounded-lg font-bold w-full mb-2">
             Request a Call back ➤
           </button>
           <small className="block text-center text-gray-600">

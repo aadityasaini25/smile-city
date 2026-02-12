@@ -98,7 +98,7 @@ export default function Home() {
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-20 left-10 w-32 h-32 bg-blue-200 rounded-full opacity-20 animate-pulse"></div>
         <div className="absolute bottom-40 right-10 w-24 h-24 bg-yellow-200 rounded-full opacity-20 animate-bounce"></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-green-200 rounded-full opacity-20 animate-ping"></div>
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 rounded-full opacity-20 animate-ping" style={{ backgroundColor: '#5B216E' }}></div>
       </div>
 
       {/* Main Content */}

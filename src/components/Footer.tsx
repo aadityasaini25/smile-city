@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="group">
             <h3 className="font-bold text-gray-900 mb-4 text-lg border-b border-gray-100 pb-2 inline-block md:block md:w-full group-hover:text-brandTeal transition-colors">Contact Us</h3>
             <div className="flex flex-col gap-1 mb-2">
-              <a href="tel:+919211663616" className="block text-[#1a897f] font-bold text-lg hover:text-brandBlue transition-colors">+91 9211663616</a>
+              <a href="tel:+919211663616" className="block text-[#5B216E] font-bold text-lg hover:text-[#5B216E] transition-colors">+91 9211663616</a>
             </div>
             <p className="text-gray-500 font-medium tracking-wide">SmileCity Orthodontic and Dental Clinic</p>
             <a href="mailto:smilecity.gurgaon@gmail.com" className="text-sm text-gray-400 hover:text-brandTeal transition-colors mt-1 block">smilecity.gurgaon@gmail.com</a>
@@ -31,7 +31,7 @@ export default function Footer() {
             <h3 className="font-bold text-gray-900 mb-4 text-lg border-b border-gray-100 pb-2 inline-block md:block md:w-full group-hover:text-brandTeal transition-colors">Open Hours</h3>
             <div className="text-gray-600 space-y-2">
               <div className="flex items-start justify-center md:justify-start gap-2">
-                <span className="text-[#1a897f] text-xl mt-0.5">🕒</span>
+                <span className="text-[#5B216E] text-xl mt-0.5">🕒</span>
                 <div className="text-left text-sm md:text-base">
                   <p><span className="font-bold">Mon–Sun:</span> 10:00 AM – 08:00 PM</p>
                 </div>
@@ -52,7 +52,7 @@ export default function Footer() {
                 <span>R2, LG-28, Lower Ground Floor, Near Gate 1, M3M 65th Avenue, Sector 65, Gurgaon, Haryana</span>
               </div>
             </a>
-            <p className="text-xs text-gray-400 mt-2 hover:text-brandBlue transition-colors">Click to open in Google Maps</p>
+            <p className="text-xs text-gray-400 mt-2 hover:text-[#5B216E] transition-colors">Click to open in Google Maps</p>
           </div>
         </div>
 
@@ -73,7 +73,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-            <p className="mt-4 text-xs text-[#1a897f] font-medium">No Cost EMI facility available for all major treatments.</p>
+            <p className="mt-4 text-xs text-[#5B216E] font-medium">No Cost EMI facility available for all major treatments.</p>
           </div>
 
           <div className="bg-gray-100 rounded-2xl overflow-hidden h-[300px] shadow-inner border border-gray-200">

@@ -51,15 +51,15 @@ export default function OrthodonticTypes() {
   return (
     <section className="relative bg-[#0b1120] text-white p-4 md:p-12 lg:p-16 pb-24 overflow-hidden">
       {/* Abstract background shapes */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-900/20 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-900/20 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-purple-900/20 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-900/20 rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 tracking-tight">
             Expert <span className="text-gradient-gold">Orthodontic Care</span>
           </h2>
-          <div className="w-24 h-1 bg-[#1a897f] mx-auto rounded-full mb-6 opacity-80"></div>
+          <div className="w-24 h-1 bg-[#5B216E] mx-auto rounded-full mb-6 opacity-80"></div>
           <p className="text-center text-gray-400 mb-8 md:text-lg max-w-3xl mx-auto font-light leading-relaxed">
             Orthodontics (Aligner Specialist, Invisalign Certified Provider). Specialist-driven practice by Dr. K. Purnasri in Gurgaon.
           </p>
@@ -78,12 +78,12 @@ export default function OrthodonticTypes() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <h3 className="font-bold text-center mb-4 text-xl text-white group-hover:text-[#1a897f] transition-colors">{ortho.title}</h3>
+              <h3 className="font-bold text-center mb-4 text-xl text-white group-hover:text-[#5B216E] transition-colors">{ortho.title}</h3>
               <p className="text-center mb-6 text-sm text-gray-400 leading-relaxed min-h-[60px]">{ortho.description}</p>
               <ul className="space-y-3">
                 {ortho.benefits.map((benefit, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-gray-300">
-                    <span className="text-[#1a897f] mt-0.5">✓</span>
+                    <span className="text-[#5B216E] mt-0.5">✓</span>
                     <span className="font-light">{benefit}</span>
                   </li>
                 ))}

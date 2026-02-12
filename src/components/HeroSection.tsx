@@ -8,7 +8,7 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
   return (
     <section className="relative p-4 md:p-12 lg:p-16 max-w-7xl mx-auto overflow-hidden">
       {/* Decorative background element */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
+      <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
 
       <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-center mb-8 leading-tight tracking-tight text-gray-900">
         Transform Your Smile With<br />
@@ -67,13 +67,13 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
       <div className="flex flex-col gap-4 mb-16 md:flex-row md:justify-center">
         <button
           onClick={onBookAppointment}
-          className="bg-brandBlue text-white py-4 px-10 rounded-full font-bold text-lg shadow-lg hover:shadow-blue-500/30 hover:-translate-y-1 transition-all md:min-w-[240px]"
+          className="bg-[#5B216E] text-white py-4 px-10 rounded-full font-bold text-lg shadow-lg hover:shadow-purple-500/30 hover:-translate-y-1 transition-all md:min-w-[240px]"
         >
           Book Consultation
         </button>
         <a
           href="tel:+919211663616"
-          className="bg-white text-brandBlue border-2 border-brandBlue py-4 px-10 rounded-full font-bold text-lg text-center shadow-lg hover:bg-blue-50 hover:-translate-y-1 transition-all md:min-w-[240px]"
+          className="bg-white text-[#5B216E] border-2 border-[#5B216E] py-4 px-10 rounded-full font-bold text-lg text-center shadow-lg hover:bg-purple-50 hover:-translate-y-1 transition-all md:min-w-[240px]"
         >
           Call Now ☏
         </a>
@@ -116,7 +116,7 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
       </div>
 
       <div className="glass-card p-6 md:p-10 rounded-2xl md:max-w-4xl md:mx-auto">
-        <h3 className="font-bold text-[#1a897f] mb-6 md:text-2xl text-center border-b pb-4">SmileCity Clinic USP</h3>
+        <h3 className="font-bold text-[#5B216E] mb-6 md:text-2xl text-center border-b pb-4">SmileCity Clinic USP</h3>
         <ul className="grid md:grid-cols-2 gap-4">
           <li className="flex items-start gap-3">
             <span className="text-[#d4af37] text-xl">★</span>
@@ -146,7 +146,7 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
         <div className="mt-8 text-center">
           <button
             onClick={onBookAppointment}
-            className="bg-brandBlue text-white py-3 px-8 rounded-full font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all w-full md:w-auto"
+            className="bg-[#5B216E] text-white py-3 px-8 rounded-full font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all w-full md:w-auto"
           >
             Request a Call Back ➤
           </button>

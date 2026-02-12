@@ -20,7 +20,7 @@ export default function CTABox({ onBookAppointment }: CTABoxProps) {
         <em>&quot;SPECIAL OFFER FOR NEW PATIENTS&quot;</em>
       </p>
 
-      <button onClick={onBookAppointment} className="bg-brandBlue text-white py-3 px-6 rounded-lg font-bold w-full">
+      <button onClick={onBookAppointment} className="bg-[#5B216E] text-white py-3 px-6 rounded-lg font-bold w-full">
         Request a Call back ➤
       </button>
       <small className="block text-center mt-2">

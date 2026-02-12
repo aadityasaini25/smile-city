@@ -84,7 +84,7 @@ export default function ServicesSection() {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Our Comprehensive Services</h2>
-                    <div className="w-24 h-1.5 bg-[#1a897f] mx-auto rounded-full"></div>
+                    <div className="w-24 h-1.5 bg-[#5B216E] mx-auto rounded-full"></div>
                     <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
                         From basic check-ups to advanced orthodontic transformations, we provide all the care your family needs under one roof.
                     </p>
@@ -92,13 +92,13 @@ export default function ServicesSection() {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
                     {serviceCategories.map((category, idx) => (
-                        <div key={idx} className="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:border-[#1a897f] hover:shadow-xl transition-all duration-300">
+                        <div key={idx} className="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:border-[#5B216E] hover:shadow-xl transition-all duration-300">
                             <div className="text-4xl mb-4">{category.icon}</div>
                             <h3 className="text-xl font-bold text-gray-900 mb-6">{category.title}</h3>
                             <ul className="space-y-3">
                                 {category.services.slice(0, 6).map((service, sIdx) => (
                                     <li key={sIdx} className="flex items-start gap-2 text-gray-600 text-sm">
-                                        <span className="text-[#1a897f] mt-1">•</span>
+                                        <span className="text-[#5B216E] mt-1">•</span>
                                         {service}
                                     </li>
                                 ))}
@@ -107,11 +107,11 @@ export default function ServicesSection() {
                     ))}
                 </div>
 
-                <div className="bg-[#1a897f]/5 p-10 md:p-16 rounded-[3rem] border border-[#1a897f]/10">
+                <div className="bg-[#5B216E]/5 p-10 md:p-16 rounded-[3rem] border border-[#5B216E]/10">
                     <h3 className="text-2xl font-bold text-center mb-12 text-gray-900">A-Z Dental Procedures</h3>
                     <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-2">
                         {allServices.sort().map((service, idx) => (
-                            <div key={idx} className="flex items-center gap-3 py-1 text-gray-700 text-sm hover:text-[#1a897f] transition-colors">
+                            <div key={idx} className="flex items-center gap-3 py-1 text-gray-700 text-sm hover:text-[#5B216E] transition-colors">
                                 <span className="text-[#d4af37]">✧</span>
                                 {service}
                             </div>

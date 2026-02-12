@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --brand-teal: #1a897f;
+    --brand-teal: #5B216E;
     --brand-gold: #d4af37;
     --brand-blue: #0056b3;
     --bg-medical-light: #f8fafc;
@@ -48,7 +48,7 @@
   }
 
   .text-gradient-gold {
-    background: linear-gradient(135deg, #1a897f 0%, #4fd1c5 50%, #1a897f 100%);
+    background: linear-gradient(135deg, #5B216E 0%, #5B216E 50%, #4a1b5a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -63,11 +63,21 @@
   }
 
   .btn-primary {
-    @apply bg-blue-600 text-white hover:bg-blue-700 shadow-lg hover:shadow-xl;
+    @apply text-white hover:shadow-xl shadow-lg;
+    background-color: #5B216E;
+  }
+
+  .btn-primary:hover {
+    background-color: #4a1b5a;
   }
 
   .btn-secondary {
-    @apply bg-blue-800 text-white hover:bg-blue-900 shadow-lg hover:shadow-xl;
+    @apply text-white hover:shadow-xl shadow-lg;
+    background-color: #4a1b5a;
+  }
+
+  .btn-secondary:hover {
+    background-color: #3a1548;
   }
 
   /* Card styles */
@@ -91,7 +101,7 @@
 
   /* Gradient text */
   .gradient-text {
-    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent;
   }
 
   /* Pulse effect for CTA buttons */
@@ -109,7 +119,8 @@
   }
 
   .faq-question.active {
-    @apply bg-blue-50 text-blue-600;
+    background-color: #f3e8f7;
+    color: #5B216E;
   }
 
   .faq-answer {
@@ -126,7 +137,8 @@
   }
 
   .reviewer-avatar {
-    @apply w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm;
+    @apply w-10 h-10 text-white rounded-full flex items-center justify-center font-bold text-sm;
+    background-color: #5B216E;
   }
 
   .review-stars {
@@ -167,7 +179,8 @@
 
   /* CTA box styles */
   .cta-box {
-    @apply bg-blue-600 text-white p-6 rounded-xl text-center;
+    @apply text-white p-6 rounded-xl text-center;
+    background-color: #5B216E;
   }
 
   /* Footer styles */
@@ -176,7 +189,8 @@
   }
 
   .footer-section h3 {
-    @apply font-bold text-blue-600 mb-2;
+    @apply font-bold mb-2;
+    color: #5B216E;
   }
 
   .footer-map {
@@ -190,7 +204,8 @@
 
   /* Sticky CTA styles */
   .sticky-cta {
-    @apply fixed bottom-0 left-0 right-0 bg-blue-600 text-white p-4 z-50 transform translate-y-full transition-transform duration-300;
+    @apply fixed bottom-0 left-0 right-0 text-white p-4 z-50 transform translate-y-full transition-transform duration-300;
+    background-color: #5B216E;
   }
 
   .sticky-cta.visible {
@@ -233,16 +248,27 @@
   .form-group input,
   .form-group textarea,
   .form-group select {
-    @apply w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+    @apply w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent;
+    --tw-ring-color: #5B216E;
   }
 
   .submit-btn {
-    @apply w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors duration-200;
+    @apply w-full text-white py-3 rounded-lg font-bold transition-colors duration-200;
+    background-color: #5B216E;
+  }
+
+  .submit-btn:hover {
+    background-color: #4a1b5a;
   }
 
   /* WhatsApp float button */
   .whatsapp-float {
-    @apply fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50 animate-bounce;
+    @apply fixed bottom-6 right-6 text-white p-4 rounded-full shadow-lg transition-colors z-50 animate-bounce;
+    background-color: #5B216E;
+  }
+
+  .whatsapp-float:hover {
+    background-color: #4a1b5a;
   }
 
   /* Animated background */
@@ -255,7 +281,8 @@
   }
 
   .animated-bg .circle:nth-child(1) {
-    @apply top-20 left-10 w-32 h-32 bg-blue-200 animate-pulse;
+    @apply top-20 left-10 w-32 h-32 animate-pulse;
+    background-color: rgba(91, 33, 110, 0.2);
   }
 
   .animated-bg .circle:nth-child(2) {
@@ -263,7 +290,8 @@
   }
 
   .animated-bg .circle:nth-child(3) {
-    @apply top-1/2 left-1/4 w-16 h-16 bg-green-200 animate-ping;
+    @apply top-1/2 left-1/4 w-16 h-16 animate-ping;
+    background-color: rgba(26, 137, 127, 0.2);
   }
 }
 
@@ -446,9 +474,9 @@ a:focus,
 input:focus,
 textarea:focus,
 select:focus {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #5B216E;
   outline-offset: 2px;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 0 3px rgba(91, 33, 110, 0.1);
 }
 
 /* Custom scrollbar */
@@ -516,7 +544,7 @@ select:focus {
   appearance: none;
   width: 20px;
   height: 20px;
-  background: #1a897f;
+  background: #5B216E;
   border: 2px solid white;
   border-radius: 50%;
   cursor: pointer;
@@ -526,7 +554,7 @@ select:focus {
 .sliderimg .slider::-moz-range-thumb {
   width: 20px;
   height: 20px;
-  background: #1a897f;
+  background: #5B216E;
   border: 2px solid white;
   border-radius: 50%;
   cursor: pointer;
