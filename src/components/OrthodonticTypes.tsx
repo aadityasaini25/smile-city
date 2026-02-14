@@ -49,42 +49,42 @@ export default function OrthodonticTypes() {
   ];
 
   return (
-    <section className="relative bg-[#0b1120] text-white p-4 md:p-12 lg:p-16 pb-24 overflow-hidden">
+    <section className="relative bg-[#0b1120] text-white py-20 md:py-32 px-4 md:px-8 lg:px-12 overflow-hidden">
       {/* Abstract background shapes */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-purple-900/20 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-900/20 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[120px] -z-0"></div>
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-[120px] -z-0"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 tracking-tight">
-            Expert <span className="text-gradient-gold">Orthodontic Care</span>
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight">
+            Specialized <span className="text-gradient-gold">Orthodontic Care</span>
           </h2>
-          <div className="w-24 h-1 bg-[#5B216E] mx-auto rounded-full mb-6 opacity-80"></div>
-          <p className="text-center text-gray-400 mb-8 md:text-lg max-w-3xl mx-auto font-light leading-relaxed">
-            Orthodontics (Aligner Specialist, Invisalign Certified Provider). Specialist-driven practice by Dr. K. Purnasri in Gurgaon.
+          <div className="w-24 h-1.5 bg-[#5B216E] mx-auto rounded-full mb-10 opacity-80"></div>
+          <p className="text-center text-gray-400 text-xl font-light max-w-3xl mx-auto leading-relaxed">
+            MDS Orthodontist, Aligner Specialist & Invisalign Certified Provider. Expert care led by Dr. K. Purnasri in Gurgaon.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {orthoData.map((ortho, index) => (
             <div
               key={index}
-              className="group bg-slate-800/80 backdrop-blur-sm border border-slate-700 text-gray-100 p-6 rounded-2xl shadow-xl hover:shadow-2xl hover:bg-slate-800 transition-all duration-300 hover:-translate-y-2"
+              className="group bg-slate-900/60 backdrop-blur-md border border-slate-800 p-8 rounded-[32px] shadow-2xl hover:shadow-purple-500/10 hover:bg-slate-800/80 transition-all duration-500 hover:-translate-y-2 flex flex-col"
             >
-              <div className="relative bg-white/5 rounded-xl mb-6 h-48 flex items-center justify-center overflow-hidden border border-slate-700/50 group-hover:border-brandTeal/30 transition-colors">
+              <div className="relative rounded-2xl mb-8 aspect-[4/3] flex items-center justify-center overflow-hidden border border-slate-700/50 group-hover:border-purple-500/30 transition-colors bg-white">
                 <img
                   src={ortho.image}
                   alt={ortho.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               </div>
-              <h3 className="font-bold text-center mb-4 text-xl text-white group-hover:text-[#5B216E] transition-colors">{ortho.title}</h3>
-              <p className="text-center mb-6 text-sm text-gray-400 leading-relaxed min-h-[60px]">{ortho.description}</p>
-              <ul className="space-y-3">
+              <h3 className="font-bold text-center mb-4 text-2xl text-white group-hover:text-white transition-colors">{ortho.title}</h3>
+              <p className="text-center mb-8 text-gray-400 leading-relaxed font-light flex-grow">{ortho.description}</p>
+              <ul className="space-y-4">
                 {ortho.benefits.map((benefit, i) => (
-                  <li key={i} className="flex items-start gap-3 text-sm text-gray-300">
-                    <span className="text-[#5B216E] mt-0.5">✓</span>
-                    <span className="font-light">{benefit}</span>
+                  <li key={i} className="flex items-start gap-3 text-[15px] text-gray-300">
+                    <span className="text-[#d4af37] mt-1 text-xs">✦</span>
+                    <span className="font-light leading-snug">{benefit}</span>
                   </li>
                 ))}
               </ul>

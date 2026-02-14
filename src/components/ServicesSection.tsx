@@ -55,50 +55,50 @@ const serviceCategories = [
     }
 ];
 
-const allServices = [
-    "Invisible/Clear Braces", "RCT - Root Canal Treatment", "General Dentistry", "Cosmetic/ Aesthetic Dentistry",
-    "Dental Implant Fixing", "Dental cap", "geriatric (elderly) dentistry", "Micro Dentistry",
-    "patient-centered dental care", "Child Care Dentistry", "oral prophylaxis/teeth cleaning",
-    "microscope integrated dental treatments", "Periodontics and Oral Implantology", "Dental Fillings",
-    "BPS Dentures Fixing", "Metal Braces Fixing", "Dental Braces Fixing", "Tooth Coloured Fillings",
-    "Implant Prosthesis", "Implant Retained Dentures", "Retention implant dentures",
-    "Advanced surgery in Implantology", "Wedding Smile Planner", "Impaction / Impacted Tooth Extraction",
-    "Teeth Straightening", "Straightening Teeth (Invisalign)", "Teeth Whitening", "Teeth - Jewellery",
-    "Teeth Reshaping", "Artificial Teeth", "Orthodontic Treatment", "Dental Restoration",
-    "Dental X-Ray", "Dental Examinations", "Cast Partial Denture", "Preparation for Dentures",
-    "Ceramic Dental Braces", "Bad Breath (Halitosis) Treatment", "Crowns and Bridges Fixing",
-    "Ceramic Crowns and Bridges Fixing", "Braces Adjustment", "Cleft Lip Repair", "Traumatic injuries Dental",
-    "Inlays and Onlays", "Temporomandibular dysfunction", "Temporomandibular Joint Disorder",
-    "Straightening Teeth (Conventional Braces)", "Temporomandibular Joint Dysfunction - ATM",
-    "Full Denture (Acrylic)", "Removal Partial Denture (RPD)", "Conservative Dentistry",
-    "Pit and Fissure Sealant", "Overdentures Fixing", "Composite Bondings", "Cosmetic Filling",
-    "Post and Core", "Cosmetic Veneers/Bonding", "Complete/Partial Dentures Fixing",
-    "Gum Disease Treatment/ Surgery", "Discolored Tooth Restoration", "Flap Surgery",
-    "Flexible Partial/Complete Denture", "Jaw Orthopedics", "Endo Surgery Or Apicoectomy",
-    "Oral Rehabilitation"
+const groupedServices = [
+    {
+        category: "Orthodontics",
+        services: ["Metal & Ceramic Braces", "Invisible/Clear Braces", "Invisalign", "Straightening Teeth", "Teeth Straightening", "Bite Correction", "Jaw Alignment", "Self-Ligating Braces", "Retainers", "Braces Adjustment", "Jaw Orthopedics"]
+    },
+    {
+        category: "General & Family Dentistry",
+        services: ["Routine Check-ups", "Teeth Cleaning", "Dental Fillings", "Tooth Coloured Fillings", "Root Canal Treatment (RCT)", "Extractions", "Dental X-Ray", "Bad Breath Treatment", "Flissure Sealant"]
+    },
+    {
+        category: "Cosmetic & Restorative Care",
+        services: ["Teeth Whitening", "Dental Veneers", "Smile Makeovers", "Teeth Jewellery", "Teeth Reshaping", "Crowns and Bridges", "Ceramic Crowns", "Composite Bondings", "Smile Designing"]
+    },
+    {
+        category: "Advanced Dental Solutions",
+        services: ["Dental Implants", "Implant Prosthesis", "Full & Partial Dentures", "RPD", "Oral Rehabilitation", "TMJ Disorder Treatment", "Micro Dentistry", "Impacted Tooth Extraction"]
+    },
+    {
+        category: "Pediatric & Geriatric Dentistry",
+        services: ["Child Care Dentistry", "Geriatric Dentistry", "Elderly Dental Care", "Milk Tooth Extraction", "Pediatric Consultations"]
+    }
 ];
 
 export default function ServicesSection() {
     return (
-        <section className="py-16 md:py-24 px-4 md:px-8 bg-white" id="services">
+        <section className="py-20 md:py-32 px-4 md:px-8 bg-white" id="services">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Our Comprehensive Services</h2>
-                    <div className="w-24 h-1.5 bg-[#5B216E] mx-auto rounded-full"></div>
-                    <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">Our Specialized Care</h2>
+                    <div className="w-24 h-1.5 bg-[#5B216E] mx-auto rounded-full mb-8"></div>
+                    <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
                         From basic check-ups to advanced orthodontic transformations, we provide all the care your family needs under one roof.
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
                     {serviceCategories.map((category, idx) => (
-                        <div key={idx} className="bg-gray-50 p-8 rounded-3xl border border-gray-100 hover:border-[#5B216E] hover:shadow-xl transition-all duration-300">
-                            <div className="text-4xl mb-4">{category.icon}</div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-6">{category.title}</h3>
-                            <ul className="space-y-3">
+                        <div key={idx} className="card group">
+                            <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">{category.icon}</div>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-6">{category.title}</h3>
+                            <ul className="space-y-4">
                                 {category.services.slice(0, 6).map((service, sIdx) => (
-                                    <li key={sIdx} className="flex items-start gap-2 text-gray-600 text-sm">
-                                        <span className="text-[#5B216E] mt-1">•</span>
+                                    <li key={sIdx} className="flex items-start gap-3 text-gray-600 font-light">
+                                        <span className="text-[#5B216E] mt-1.5 text-xs">•</span>
                                         {service}
                                     </li>
                                 ))}
@@ -107,13 +107,20 @@ export default function ServicesSection() {
                     ))}
                 </div>
 
-                <div className="bg-[#5B216E]/5 p-10 md:p-16 rounded-[3rem] border border-[#5B216E]/10">
-                    <h3 className="text-2xl font-bold text-center mb-12 text-gray-900">A-Z Dental Procedures</h3>
-                    <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-2">
-                        {allServices.sort().map((service, idx) => (
-                            <div key={idx} className="flex items-center gap-3 py-1 text-gray-700 text-sm hover:text-[#5B216E] transition-colors">
-                                <span className="text-[#d4af37]">✧</span>
-                                {service}
+                <div className="bg-lavender p-10 md:p-20 rounded-[3rem] border border-purple-100/50">
+                    <h3 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900 tracking-tight">Comprehensive Dental Treatments</h3>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                        {groupedServices.map((group, gIdx) => (
+                            <div key={gIdx} className="space-y-6">
+                                <h4 className="text-xl font-bold text-[#5B216E] border-b border-purple-200 pb-3">{group.category}</h4>
+                                <ul className="space-y-3">
+                                    {group.services.map((service, sIdx) => (
+                                        <li key={sIdx} className="flex items-center gap-3 text-gray-700 font-light hover:text-[#5B216E] transition-colors">
+                                            <span className="text-[#d4af37] text-xs">✧</span>
+                                            {service}
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         ))}
                     </div>

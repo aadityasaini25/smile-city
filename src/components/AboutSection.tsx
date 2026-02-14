@@ -2,23 +2,23 @@ import React from 'react';
 
 export default function AboutSection() {
     return (
-        <section className="py-12 md:py-16 px-4 md:px-8 lg:px-12 bg-gray-50">
+        <section className="py-20 md:py-32 px-4 md:px-8 lg:px-12 bg-lavender">
             <div className="max-w-6xl mx-auto">
-                <div className="mb-12 text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#5B216E] mb-6">Welcome to SmileCity Orthodontic and Dental Clinic</h2>
-                    <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
+                <div className="mb-16 text-center">
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#5B216E] mb-8 tracking-tight">Welcome to SmileCity Orthodontic and Dental Clinic</h2>
+                    <p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-4xl mx-auto font-light">
                         At <strong>SmileCity Orthodontic and Dental Clinic</strong> in Gurgaon, we provide a unique, all-in-one approach to your family's oral health. We believe a truly great smile is built on a foundation of expert care, advanced technology, and genuine patient comfort.
                     </p>
                 </div>
 
-                <div className="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-teal-50 mb-12 relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/5 rounded-full -mr-16 -mt-16"></div>
+                <div className="bg-white p-10 md:p-16 rounded-[32px] shadow-premium border border-white/50 mb-16 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/5 rounded-full -mr-32 -mt-32"></div>
                     <div className="relative z-10">
-                        <h3 className="text-2xl md:text-3xl font-bold text-[#5B216E] mb-6">A Unique Advantage: Orthodontic & General Dentistry in One Place</h3>
-                        <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                        <h3 className="text-3xl md:text-4xl font-bold text-[#5B216E] mb-8 tracking-tight">A Unique Advantage: Orthodontic & General Dentistry in One Place</h3>
+                        <p className="text-xl text-gray-700 leading-relaxed mb-8 font-light">
                             Our clinic is led by <strong>Dr. K. Purnasri</strong>, a specialist in both <strong>Orthodontics (braces and aligners)</strong> and <strong>General Dentistry</strong>.
                         </p>
-                        <p className="text-lg text-gray-700 leading-relaxed">
+                        <p className="text-xl text-gray-700 leading-relaxed font-light">
                             This dual expertise is your advantage. You receive seamless, continuous care for your entire dental journey. Why visit multiple specialists when you can have your routine check-ups, cleanings, and advanced orthodontic work managed with a single, holistic vision for your smile?
                         </p>
                     </div>

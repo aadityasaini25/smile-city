@@ -105,12 +105,12 @@ export default function Home() {
       <div className="relative z-10">
         <Header onBookAppointment={openPopup} />
         <HeroSection onBookAppointment={openPopup} />
+        <GoogleReviews />
         <AboutSection />
         <OrthodonticTypes />
         <ServicesSection />
         <BeforeAfterGallery onBookAppointment={openPopup} />
         <CTABox onBookAppointment={openPopup} />
-        <GoogleReviews />
         <DoctorProfile onBookAppointment={openPopup} />
         <ClinicPhotos onBookAppointment={openPopup} />
         <FAQSection />

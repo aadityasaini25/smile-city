@@ -6,21 +6,21 @@ interface HeroSectionProps {
 
 export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
   return (
-    <section className="relative p-4 md:p-12 lg:p-16 max-w-7xl mx-auto overflow-hidden">
+    <section className="relative pt-12 pb-20 md:pt-20 md:pb-32 px-4 md:px-12 lg:px-16 max-w-7xl mx-auto overflow-hidden">
       {/* Decorative background element */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl -z-10 animate-pulse"></div>
 
-      <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-center mb-8 leading-tight tracking-tight text-gray-900">
+      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center mb-12 leading-[1.1] tracking-tight text-gray-900">
         Transform Your Smile With<br />
         <span className="text-gradient-gold">SmileCity Orthodontic and Dental Clinic</span>
       </h1>
 
-      <div className="md:flex md:items-center md:gap-8 md:mb-16">
-        <div className="relative rounded-2xl aspect-[9/16] md:aspect-auto md:h-[450px] mb-8 md:mb-0 md:flex-1 overflow-hidden shadow-2xl border-4 border-white/50 group hover:scale-[1.02] transition-transform duration-500">
+      <div className="md:flex md:items-center md:gap-12 md:mb-16">
+        <div className="relative rounded-2xl aspect-[9/16] md:aspect-auto md:h-[550px] md:max-w-[320px] mx-auto md:mx-0 mb-8 md:mb-0 md:flex-initial overflow-hidden shadow-2xl border-4 border-white/50 group hover:scale-[1.02] transition-transform duration-500">
           <div className="bg-black w-full h-full flex items-center justify-center">
             <video
               className="w-full h-full object-contain"
-              src="/videos/It’s not scraping... it’s vibration! 🌊✨ (Part 2)​In Part 1, we talked about why you need scalin.mp4"
+              src="/videos/doctorvedio.mp4"
               autoPlay
               muted
               loop
@@ -64,16 +64,16 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 mb-16 md:flex-row md:justify-center">
+      <div className="flex flex-col gap-6 mb-24 md:flex-row md:justify-center">
         <button
           onClick={onBookAppointment}
-          className="bg-[#5B216E] text-white py-4 px-10 rounded-full font-bold text-lg shadow-lg hover:shadow-purple-500/30 hover:-translate-y-1 transition-all md:min-w-[240px]"
+          className="bg-[#5B216E] text-white py-4.5 px-12 rounded-full font-bold text-lg shadow-xl hover:shadow-purple-500/25 hover:-translate-y-1 transition-all md:min-w-[260px] tracking-wide"
         >
           Book Consultation
         </button>
         <a
           href="tel:+919211663616"
-          className="bg-white text-[#5B216E] border-2 border-[#5B216E] py-4 px-10 rounded-full font-bold text-lg text-center shadow-lg hover:bg-purple-50 hover:-translate-y-1 transition-all md:min-w-[240px]"
+          className="bg-white text-[#5B216E] border-2 border-[#5B216E] py-4.5 px-12 rounded-full font-bold text-lg text-center shadow-lg hover:bg-purple-50 hover:-translate-y-1 transition-all md:min-w-[260px] tracking-wide"
         >
           Call Now ☏
         </a>
@@ -85,7 +85,7 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
           Why choose <span className="text-gradient-gold">SmileCity?</span>
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
               title: "Personalized Treatment",
@@ -105,11 +105,11 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
           ].map((usp, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-2xl text-center shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
+              className="bg-white p-8 rounded-[24px] text-center shadow-premium hover:shadow-premium-hover hover:-translate-y-2 transition-all duration-500 border border-gray-100/50"
             >
-              <div className="text-4xl mb-4">{usp.icon}</div>
-              <h4 className="font-bold text-xl text-gray-900 mb-2">{usp.title}</h4>
-              <p className="text-gray-600 leading-relaxed">{usp.desc}</p>
+              <div className="text-5xl mb-6">{usp.icon}</div>
+              <h4 className="font-bold text-2xl text-gray-900 mb-4">{usp.title}</h4>
+              <p className="text-gray-600 leading-relaxed font-light">{usp.desc}</p>
             </div>
           ))}
         </div>

@@ -2,57 +2,61 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-100 pt-16 pb-8">
+    <footer className="bg-gray-900 border-t border-gray-800 pt-20 pb-10 text-gray-400">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="text-center mb-12">
-          <Image
-            src="/images/side board.png"
-            alt="SmileCity Orthodontic and Dental Clinic"
-            width={240}
-            height={60}
-            className="mx-auto mb-6 h-auto opacity-90 hover:opacity-100 transition-opacity"
-          />
-          <p className="text-gray-500 text-sm max-w-xl mx-auto font-light">
-            Aligner specialist & Invisalign certified expert. Specialist-driven orthodontic care for your perfect smile.
+        <div className="text-center mb-20">
+          <div className="bg-white p-6 rounded-2xl inline-block mb-8 shadow-xl">
+            <Image
+              src="/images/side board.png"
+              alt="SmileCity Orthodontic and Dental Clinic"
+              width={240}
+              height={60}
+              className="h-auto opacity-100"
+            />
+          </div>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto font-light leading-relaxed">
+            SmileCity Orthodontic and Dental Clinic: MDS Orthodontist, Aligner Specialist & Invisalign Certified Providers. Specialist-driven orthodontic care for your perfect smile.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-10 text-center md:text-left mb-12">
-          <div className="group">
-            <h3 className="font-bold text-gray-900 mb-4 text-lg border-b border-gray-100 pb-2 inline-block md:block md:w-full group-hover:text-brandTeal transition-colors">Contact Us</h3>
-            <div className="flex flex-col gap-1 mb-2">
-              <a href="tel:+919211663616" className="block text-[#5B216E] font-bold text-lg hover:text-[#5B216E] transition-colors">+91 9211663616</a>
+        <div className="grid md:grid-cols-3 gap-12 text-center md:text-left mb-20">
+          <div className="space-y-6">
+            <h3 className="font-bold text-white text-xl border-b border-gray-800 pb-4">Contact Us</h3>
+            <div className="space-y-4">
+              <a href="tel:+919211663616" className="block text-[#d4af37] font-bold text-2xl hover:scale-105 transition-transform inline-block">+91 9211663616</a>
+              <p className="text-gray-300 font-medium">SmileCity Orthodontic and Dental Clinic</p>
+              <a href="mailto:smilecity.gurgaon@gmail.com" className="text-sm hover:text-white transition-colors block">smilecity.gurgaon@gmail.com</a>
             </div>
-            <p className="text-gray-500 font-medium tracking-wide">SmileCity Orthodontic and Dental Clinic</p>
-            <a href="mailto:smilecity.gurgaon@gmail.com" className="text-sm text-gray-400 hover:text-brandTeal transition-colors mt-1 block">smilecity.gurgaon@gmail.com</a>
           </div>
 
-          <div className="group">
-            <h3 className="font-bold text-gray-900 mb-4 text-lg border-b border-gray-100 pb-2 inline-block md:block md:w-full group-hover:text-brandTeal transition-colors">Open Hours</h3>
-            <div className="text-gray-600 space-y-2">
-              <div className="flex items-start justify-center md:justify-start gap-2">
-                <span className="text-[#5B216E] text-xl mt-0.5">🕒</span>
-                <div className="text-left text-sm md:text-base">
-                  <p><span className="font-bold">Mon–Sun:</span> 10:00 AM – 08:00 PM</p>
-                </div>
+          <div className="space-y-6">
+            <h3 className="font-bold text-white text-xl border-b border-gray-800 pb-4">Clinic Hours</h3>
+            <div className="flex items-start justify-center md:justify-start gap-3">
+              <span className="text-[#d4af37] text-2xl mt-0.5">🕒</span>
+              <div className="text-gray-300 space-y-2">
+                <p className="font-bold">Mon–Sun</p>
+                <p>10:00 AM – 08:00 PM</p>
               </div>
             </div>
           </div>
 
-          <div className="group">
-            <h3 className="font-bold text-gray-900 mb-4 text-lg border-b border-gray-100 pb-2 inline-block md:block md:w-full group-hover:text-brandTeal transition-colors">Location</h3>
+          <div className="space-y-6">
+            <h3 className="font-bold text-white text-xl border-b border-gray-800 pb-4">Our Location</h3>
             <a
-              href="https://maps.app.goo.gl/QwtqpBP4TbuHRDGw6" // Update this with actual link if available
+              href="https://maps.app.goo.gl/QwtqpBP4TbuHRDGw6"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-brandTeal transition-colors cursor-pointer block leading-relaxed group-hover:-translate-y-1 transition-transform duration-300"
+              className="hover:text-white transition-all group block"
             >
-              <div className="flex items-start justify-center md:justify-start gap-2">
-                <span className="text-2xl mt-0.5">📍</span>
-                <span>R2, LG-28, Lower Ground Floor, Near Gate 1, M3M 65th Avenue, Sector 65, Gurgaon, Haryana</span>
+              <div className="flex items-start justify-center md:justify-start gap-3">
+                <span className="text-3xl mt-0.5">📍</span>
+                <span className="text-gray-300 leading-relaxed group-hover:text-[#d4af37] transition-colors">
+                  R2, LG-28, Lower Ground Floor,<br />
+                  M3M 65th Avenue, Sector 65,<br />
+                  Gurgaon, Haryana
+                </span>
               </div>
             </a>
-            <p className="text-xs text-gray-400 mt-2 hover:text-[#5B216E] transition-colors">Click to open in Google Maps</p>
           </div>
         </div>
 

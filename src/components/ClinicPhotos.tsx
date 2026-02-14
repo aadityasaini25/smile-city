@@ -5,40 +5,31 @@ interface ClinicPhotosProps {
 }
 
 export default function ClinicPhotos({ onBookAppointment }: ClinicPhotosProps) {
-  const allPhotos = [
-    { src: '/images/2.jpg', alt: 'Clinic Interior 1' },
-    { src: '/images/I.jpg', alt: 'Clinic Interior 2' },
-    { src: '/images/Lab.jpg', alt: 'Clinic Lab Area' },
-    { src: '/images/WhatsApp Image 2025-10-15 at 16.40.24_8b48c6f6.jpg', alt: 'Clinic Equipment' }
+  const clinicImages = [
+    { src: '/images/2.jpg', alt: 'Modern Clinic Interior' },
+    { src: '/images/I.jpg', alt: 'Comfortable Reception Area' },
+    { src: '/images/Lab.jpg', alt: 'Advanced Dental Lab' },
+    { src: '/images/WhatsApp Image 2025-10-15 at 16.40.24_8b48c6f6.jpg', alt: 'State-of-the-art Equipment' },
   ];
 
   return (
-    <section className="bg-gray-50 p-4 md:p-12 lg:p-16 relative overflow-hidden">
-      {/* Background accent */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-64 bg-gradient-to-b from-white to-transparent pointer-events-none"></div>
-
-      <div className="relative z-10 max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900 tracking-tight">Our <span className="text-gradient-gold">State-of-the-Art</span> Clinic</h2>
-          <div className="w-24 h-1 bg-[#5B216E] mx-auto rounded-full mb-6"></div>
-          <p className="text-gray-600 max-w-2xl mx-auto">Experience comfort and precision in our modern facility designed for your best smile journey.</p>
+    <section className="py-20 md:py-32 px-4 md:px-8 bg-lavender" id="gallery">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">Our Modern Facility</h2>
+          <div className="w-24 h-1.5 bg-[#5B216E] mx-auto rounded-full"></div>
         </div>
 
-        {/* Unified Photo Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-12">
-          {allPhotos.map((img, i) => (
-            <div
-              key={i}
-              className="group bg-white rounded-3xl h-64 md:h-80 lg:h-[400px] relative overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100"
-            >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16">
+          {clinicImages.map((img, i) => (
+            <div key={i} className="relative aspect-[4/3] rounded-[20px] overflow-hidden shadow-md group border-4 border-white">
               <Image
                 src={img.src}
                 alt={img.alt}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
-                quality={90}
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
           ))}
         </div>
@@ -46,12 +37,12 @@ export default function ClinicPhotos({ onBookAppointment }: ClinicPhotosProps) {
         <div className="text-center">
           <button
             onClick={onBookAppointment}
-            className="bg-[#5B216E] text-white py-4 px-12 rounded-full font-bold text-lg hover:bg-blue-700 hover:shadow-lg transition-all shadow-md transform hover:-translate-y-1"
+            className="btn-primary"
           >
-            Schedule a Visit
+            Visit Our Clinic
           </button>
         </div>
       </div>
     </section>
   );
-} 
+}

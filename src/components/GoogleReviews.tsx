@@ -29,37 +29,38 @@ export default function GoogleReviews() {
   ];
 
   return (
-    <section className="p-4 md:p-8 lg:p-12">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-6 md:mb-10">
+    <section className="py-20 md:py-32 px-4 md:px-8 lg:px-12 bg-lavender">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
           <Image
             src="/images/google.png"
             alt="Google Logo"
-            width={128}
-            height={48}
-            className="mx-auto mb-4 object-contain"
+            width={160}
+            height={60}
+            className="mx-auto mb-6 object-contain"
           />
-          <h2 className="text-xl md:text-3xl font-bold">What Our Patients Say</h2>
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">What Our Patients Say</h2>
+          <div className="w-24 h-1 bg-[#5B216E] mx-auto rounded-full mt-6 opacity-60"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
           {reviews.map((review, index) => (
-            <div key={index} className="bg-white border rounded-lg p-4 md:p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <div className="flex items-start gap-3 mb-3">
-                <div className="w-10 h-10 md:w-12 md:h-12 text-white rounded-full flex items-center justify-center font-bold" style={{ backgroundColor: '#5B216E' }}>
+            <div key={index} className="card">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-inner" style={{ backgroundColor: '#5B216E' }}>
                   {review.initials}
                 </div>
                 <div>
-                  <h3 className="font-bold md:text-lg">{review.name}</h3>
-                  <p className="text-sm text-gray-600">{review.date}</p>
+                  <h3 className="font-bold text-lg text-gray-900">{review.name}</h3>
+                  <p className="text-sm text-gray-500">{review.date}</p>
                 </div>
               </div>
-              <div className="flex text-yellow-400 mb-3">
+              <div className="flex text-yellow-400 mb-4 text-lg">
                 {[...Array(5)].map((_, i) => (
                   <span key={i}>⭐</span>
                 ))}
               </div>
-              <p className="text-gray-700 text-sm md:text-base">{review.review}</p>
+              <p className="text-gray-700 leading-relaxed font-light">{review.review}</p>
             </div>
           ))}
         </div>

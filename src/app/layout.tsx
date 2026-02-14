@@ -9,7 +9,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "SmileCity Orthodontic and Dental Clinic | Best Orthodontist in Gurgaon, Haryana",
-  description: "Dr. K. Purnasri - MDS Orthodontist & Aligner Specialist. Invisalign Certified Provider. Located at Sector 65, Gurgaon. Specialist-driven orthodontic care.",
+  description: "Dr. K. Purnasri (MDS Orthodontist, Aligner Specialist, Invisalign Certified Provider). Located at Sector 65, Gurgaon. Specialist-driven orthodontic care.",
   keywords: "Dr. K. Purnasri, Orthodontist, Aligner Specialist, Invisalign Gurgaon, SmileCity Orthodontic and Dental Clinic, Sector 65 Gurgaon Dentist, Braces",
   authors: [{ name: "Dr. K. Purnasri" }],
   creator: "SmileCity Orthodontic and Dental Clinic",

@@ -73,15 +73,15 @@ export default function PopupForm({ isOpen, onClose, minutes, seconds }: PopupFo
       <div className="bg-white rounded-lg p-6 w-full max-w-xl max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl md:text-2xl font-bold text-[#01659e]">Book Your Appointment</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-[#5B216E]">Book Your Appointment</h2>
           <button onClick={onClose} className="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
         </div>
 
         {/* Offer info */}
-        <div className="bg-gray-50 p-3 md:p-4 rounded-lg mb-4 border-l-4 border-[#01659e]">
+        <div className="bg-purple-50 p-3 md:p-4 rounded-lg mb-4 border-l-4 border-[#5B216E]">
           <p className="text-sm md:text-base text-gray-700 text-center">
             <strong>Includes:</strong> Professional Consultation & Digital Scan
-            <span className="text-[#01659e] font-bold"> with Our Certified Implantologist</span>
+            <span className="text-[#5B216E] font-bold"> with Our MDS Orthodontist</span>
           </p>
         </div>
 
