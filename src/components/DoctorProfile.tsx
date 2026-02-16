@@ -19,7 +19,7 @@ export default function DoctorProfile({ onBookAppointment }: DoctorProfileProps)
             <div className="relative w-full max-w-md aspect-[4/5] rounded-[32px] overflow-hidden shadow-premium border-8 border-white ring-1 ring-gray-100 transform hover:scale-[1.02] transition-transform duration-500">
               <Image
                 src="/images/smile.jpg"
-                alt="Dr. K. Purnasri"
+                alt="Dr. Purna Sri"
                 fill
                 className="object-cover"
               />
@@ -29,7 +29,7 @@ export default function DoctorProfile({ onBookAppointment }: DoctorProfileProps)
           {/* Content Side */}
           <div className="w-full md:w-3/5 text-center md:text-left">
             <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-              Dr. K. Purnasri
+              Dr. Purna Sri
             </h3>
             <p className="text-[#5B216E] font-bold text-xl uppercase tracking-widest mb-8 border-b border-purple-100 pb-4 inline-block">
               MDS Orthodontist, Aligner Specialist, Invisalign Certified Provider
@@ -37,7 +37,7 @@ export default function DoctorProfile({ onBookAppointment }: DoctorProfileProps)
 
             <div className="space-y-6 text-gray-600 text-xl leading-relaxed font-light">
               <p>
-                With over <strong className="text-gray-900">8 years of clinical experience</strong>, Dr. K. Purnasri is a dedicated specialist providing precision-driven orthodontic care. She is recognized for her expertise in complex alignment cases and digital smile design.
+                With over <strong className="text-gray-900">8 years of clinical experience</strong>, Dr. Purna Sri is a dedicated specialist providing precision-driven orthodontic care. She is recognized for her expertise in complex alignment cases and digital smile design.
               </p>
               <p>
                 At <strong>SmileCity Orthodontic and Dental Clinic</strong>, we follow a specialist-driven practice model, ensuring you receive direct care from the lead doctor throughout your treatment journey.

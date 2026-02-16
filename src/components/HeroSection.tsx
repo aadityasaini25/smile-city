@@ -15,8 +15,8 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
         <span className="text-gradient-gold">SmileCity Orthodontic and Dental Clinic</span>
       </h1>
 
-      <div className="md:flex md:items-center md:justify-center md:gap-8 md:mb-12">
-        <div className="relative rounded-2xl aspect-[9/16] md:aspect-auto md:h-[450px] md:max-w-[280px] mx-auto md:mx-0 mb-6 md:mb-0 md:flex-initial overflow-hidden shadow-2xl border-4 border-white/50 group hover:scale-[1.02] transition-transform duration-500">
+      <div className="md:flex md:items-center md:justify-center md:gap-4 md:mb-12">
+        <div className="relative rounded-2xl aspect-[9/16] md:aspect-auto h-[400px] md:h-[450px] max-w-[240px] md:max-w-[280px] mx-auto md:mx-0 mb-6 md:mb-0 md:flex-initial overflow-hidden shadow-2xl border-4 border-white/50 group hover:scale-[1.02] transition-transform duration-500">
           <div className="bg-black w-full h-full flex items-center justify-center">
             <video
               className="w-full h-full object-contain"
@@ -39,15 +39,15 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
             <div className="w-10 h-1 bg-brandGold mx-auto rounded-full mb-3 opacity-80"></div>
 
             <div className="space-y-2 mb-4">
-              <div className="flex items-center gap-2 text-left">
+              <div className="flex items-center justify-center gap-2">
                 <span className="text-brandGold text-base">✓</span>
                 <p className="text-sm text-gray-300">MDS Orthodontist - Specialist-Driven</p>
               </div>
-              <div className="flex items-center gap-2 text-left">
+              <div className="flex items-center justify-center gap-2">
                 <span className="text-brandGold text-base">✓</span>
                 <p className="text-sm text-gray-300">Aligner & Invisalign Certified Expert</p>
               </div>
-              <div className="flex items-center gap-2 text-left">
+              <div className="flex items-center justify-center gap-2">
                 <span className="text-brandGold text-base">✓</span>
                 <p className="text-sm text-gray-300">Treatment Starting at ₹28,000</p>
               </div>

@@ -9,9 +9,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "SmileCity Orthodontic and Dental Clinic | Best Orthodontist in Gurgaon, Haryana",
-  description: "Dr. K. Purnasri (MDS Orthodontist, Aligner Specialist, Invisalign Certified Provider). Located at Sector 65, Gurgaon. Specialist-driven orthodontic care.",
-  keywords: "Dr. K. Purnasri, Orthodontist, Aligner Specialist, Invisalign Gurgaon, SmileCity Orthodontic and Dental Clinic, Sector 65 Gurgaon Dentist, Braces",
-  authors: [{ name: "Dr. K. Purnasri" }],
+  description: "Dr. Purna Sri (MDS Orthodontist, Aligner Specialist, Invisalign Certified Provider). Located at Sector 65, Gurgaon. Specialist-driven orthodontic care.",
+  keywords: "Dr. Purna Sri, Orthodontist, Aligner Specialist, Invisalign Gurgaon, SmileCity Orthodontic and Dental Clinic, Sector 65 Gurgaon Dentist, Braces",
+  authors: [{ name: "Dr. Purna Sri" }],
   creator: "SmileCity Orthodontic and Dental Clinic",
   publisher: "SmileCity Orthodontic and Dental Clinic",
   formatDetection: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "SmileCity Orthodontic and Dental Clinic | Expert Orthodontic Care",
-    description: "Dr. K. Purnasri - 8+ Years Experience. M3M 65th Avenue, Sector 65, Gurgaon.",
+    description: "Dr. Purna Sri - 8+ Years Experience. M3M 65th Avenue, Sector 65, Gurgaon.",
     url: 'https://smilecitygurgaon.com/',
     siteName: "SmileCity Orthodontic and Dental Clinic",
     images: [

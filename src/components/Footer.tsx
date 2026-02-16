@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="text-center mb-20">
           <div className="bg-white p-6 rounded-2xl inline-block mb-8 shadow-xl">
             <Image
-              src="/images/side board.png"
+              src="/images/logo.png"
               alt="SmileCity Orthodontic and Dental Clinic"
               width={240}
               height={60}

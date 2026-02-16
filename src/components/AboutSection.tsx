@@ -16,7 +16,7 @@ export default function AboutSection() {
                     <div className="relative z-10">
                         <h3 className="text-3xl md:text-4xl font-bold text-[#5B216E] mb-8 tracking-tight">A Unique Advantage: Orthodontic & General Dentistry in One Place</h3>
                         <p className="text-xl text-gray-700 leading-relaxed mb-8 font-light">
-                            Our clinic is led by <strong>Dr. K. Purnasri</strong>, a specialist in both <strong>Orthodontics (braces and aligners)</strong> and <strong>General Dentistry</strong>.
+                            Our clinic is led by <strong>Dr. Purna Sri</strong>, a specialist in both <strong>Orthodontics (braces and aligners)</strong> and <strong>General Dentistry</strong>.
                         </p>
                         <p className="text-xl text-gray-700 leading-relaxed font-light">
                             This dual expertise is your advantage. You receive seamless, continuous care for your entire dental journey. Why visit multiple specialists when you can have your routine check-ups, cleanings, and advanced orthodontic work managed with a single, holistic vision for your smile?
@@ -47,7 +47,7 @@ export default function AboutSection() {
                     <div className="bg-white p-6 md:p-8 rounded-xl shadow-md border-t-4 border-[#d4af37]">
                         <h3 className="text-xl md:text-2xl font-bold text-[#5B216E] mb-4">Meet Our Expert</h3>
                         <div className="space-y-4">
-                            <p className="font-bold text-xl text-gray-900">Dr. K. Purnasri</p>
+                            <p className="font-bold text-xl text-gray-900">Dr. Purna Sri</p>
                             <ul className="space-y-3">
                                 {[
                                     "MDS Orthodontist - Specialist-Driven Care",

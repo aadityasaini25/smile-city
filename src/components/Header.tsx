@@ -10,11 +10,11 @@ export default function Header({ onBookAppointment }: HeaderProps) {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
         <div className="flex flex-col md:flex-row items-center gap-4">
           <Image
-            src="/images/side board.png"
+            src="/images/logo.png"
             alt="SmileCity Orthodontic and Dental Clinic Logo"
-            width={140}
-            height={35}
-            className="h-auto w-28 md:w-36 hover:opacity-90 transition-opacity"
+            width={180}
+            height={45}
+            className="h-auto w-36 md:w-48 hover:opacity-90 transition-opacity"
           />
           <div className="hidden lg:block w-px h-6 bg-gray-200"></div>
           <a
@@ -26,8 +26,8 @@ export default function Header({ onBookAppointment }: HeaderProps) {
             <div className="flex items-center gap-1 justify-center md:justify-start text-[9px] uppercase tracking-widest font-bold text-gray-400 mb-0">
               <span>📍 Location</span>
             </div>
-            <p className="text-[11px] font-medium text-gray-700 leading-tight whitespace-nowrap">
-              M3M 65th Avenue, Sector 65, Gurgaon, Haryana
+            <p className="text-[10px] md:text-[11px] font-medium text-gray-700 leading-tight md:whitespace-nowrap text-center md:text-left">
+              M3M 65th Avenue, Sector 65, Gurgaon
             </p>
           </a>
         </div>

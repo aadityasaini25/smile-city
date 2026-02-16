@@ -12,7 +12,7 @@ export default function FAQSection() {
     },
     {
       question: "How long does orthodontic treatment usually take?",
-      answer: "Treatment duration varies based on complexity, but most cases range from 6 to 18 months for aligners, and 12 to 24 months for traditional braces. During your consultation with Dr. K. Purnasri, we'll provide a customized timeline for your specific smile."
+      answer: "Treatment duration varies based on complexity, but most cases range from 6 to 18 months for aligners, and 12 to 24 months for traditional braces. During your consultation with Dr. Purna Sri, we'll provide a customized timeline for your specific smile."
     },
     {
       question: "Am I too old for braces or Invisalign?",

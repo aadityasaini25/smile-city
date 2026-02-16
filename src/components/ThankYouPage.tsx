@@ -20,14 +20,14 @@ export default function ThankYouPage() {
             <div className="w-48 h-48 relative rounded-full overflow-hidden border-4 border-gray-200">
               <Image
                 src="/images/smile.jpg"
-                alt="Dr. K. Purnasri"
+                alt="Dr. Purna Sri"
                 fill
                 className="object-cover object-top"
               />
             </div>
             <div className="text-center md:text-left">
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
-                Dr. K. Purnasri
+                Dr. Purna Sri
               </h2>
               <p className="text-[#01659e] font-medium mb-4">
                 Orthodontics (Aligner Specialist, Invisalign Certified Provider)

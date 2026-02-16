@@ -61,7 +61,7 @@ export default function BeforeAfterGallery({ onBookAppointment }: BeforeAfterGal
             Ready for Your <span className="text-[#5B216E]">Smile Transformation?</span>
           </h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Join hundreds of satisfied patients who have transformed their smiles with Dr. K. Purnasri&apos;s expertise. Book your consultation today and take the first step towards your dream smile.
+            Join hundreds of satisfied patients who have transformed their smiles with Dr. Purna Sri&apos;s expertise. Book your consultation today and take the first step towards your dream smile.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button

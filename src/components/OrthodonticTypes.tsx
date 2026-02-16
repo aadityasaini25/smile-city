@@ -37,7 +37,7 @@ export default function OrthodonticTypes() {
     },
     {
       title: "Self-Ligating Braces",
-      image: "/images/Self-Ligating Braces.jpeg",
+      image: "/images/Self-Ligating-Braces.jpeg",
       description: "Modern orthodontic technology designed for faster treatment times and fewer clinic visits.",
       benefits: [
         "Faster tooth movement with reduced friction",
@@ -61,7 +61,7 @@ export default function OrthodonticTypes() {
           </h2>
           <div className="w-24 h-1.5 bg-[#5B216E] mx-auto rounded-full mb-10 opacity-80"></div>
           <p className="text-center text-gray-400 text-xl font-light max-w-3xl mx-auto leading-relaxed">
-            MDS Orthodontist, Aligner Specialist & Invisalign Certified Provider. Expert care led by Dr. K. Purnasri in Gurgaon.
+            MDS Orthodontist, Aligner Specialist & Invisalign Certified Provider. Expert care led by Dr. Purna Sri in Gurgaon.
           </p>
         </div>
 
