@@ -13,9 +13,9 @@ export default function Header({ onBookAppointment }: HeaderProps) {
           <Image
             src="/images/logo.png"
             alt="SmileCity Orthodontic and Dental Clinic Logo"
-            width={180}
-            height={45}
-            className="h-auto w-40 md:w-56 hover:opacity-90 transition-opacity"
+            width={400}
+            height={100}
+            className="h-auto w-64 md:w-96 hover:opacity-90 transition-opacity"
           />
           <div className="hidden lg:block w-px h-6 bg-gray-200"></div>
           <a
