@@ -19,6 +19,7 @@ import PopupForm from "@/components/PopupForm";
 import StickyCTA from "@/components/StickyCTA";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
+import SmileSimulator from "@/components/SmileSimulator";
 
 export default function Home() {
   const [showStickyCta, setShowStickyCta] = useState(false);
@@ -105,6 +106,7 @@ export default function Home() {
       <div className="relative z-10">
         <Header onBookAppointment={openPopup} />
         <HeroSection onBookAppointment={openPopup} />
+        <SmileSimulator />
         <GoogleReviews />
         <AboutSection />
         <OrthodonticTypes />

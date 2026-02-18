@@ -6,7 +6,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
   return (
-    <section className="relative pt-6 pb-10 md:pt-10 md:pb-16 px-4 md:px-12 lg:px-16 max-w-7xl mx-auto overflow-hidden">
+    <section className="relative pt-4 pb-6 md:pt-10 md:pb-16 px-4 md:px-12 lg:px-16 max-w-7xl mx-auto overflow-hidden">
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl -z-10 animate-pulse"></div>
 
@@ -16,7 +16,7 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
       </h1>
 
       <div className="md:flex md:items-center md:justify-center md:gap-4 md:mb-12">
-        <div className="relative rounded-2xl aspect-[9/16] md:aspect-auto h-[400px] md:h-[450px] max-w-[240px] md:max-w-[280px] mx-auto md:mx-0 mb-6 md:mb-0 md:flex-initial overflow-hidden shadow-2xl border-4 border-white/50 group hover:scale-[1.02] transition-transform duration-500">
+        <div className="relative rounded-2xl aspect-[9/16] md:aspect-auto h-[280px] md:h-[450px] max-w-[200px] md:max-w-[280px] mx-auto md:mx-0 mb-6 md:mb-0 md:flex-initial overflow-hidden shadow-2xl border-4 border-white/50 group hover:scale-[1.02] transition-transform duration-500">
           <div className="bg-black w-full h-full flex items-center justify-center">
             <video
               className="w-full h-full object-contain"
@@ -85,7 +85,7 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
           Why choose <span className="text-gradient-gold">SmileCity?</span>
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
           {[
             {
               title: "Personalized Treatment",
