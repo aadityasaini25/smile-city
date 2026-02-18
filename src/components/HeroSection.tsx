@@ -6,7 +6,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
   return (
-    <section className="relative pt-4 pb-6 md:pt-10 md:pb-16 px-4 md:px-12 lg:px-16 max-w-7xl mx-auto overflow-hidden">
+    <section className="relative pt-8 pb-8 md:pt-12 md:pb-20 px-5 md:px-12 lg:px-16 max-w-7xl mx-auto overflow-hidden">
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl -z-10 animate-pulse"></div>
 
@@ -15,11 +15,11 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
         <span className="text-gradient-gold">SmileCity Orthodontic and Dental Clinic</span>
       </h1>
 
-      <div className="md:flex md:items-center md:justify-center md:gap-4 md:mb-12">
-        <div className="relative rounded-2xl aspect-[9/16] md:aspect-auto h-[280px] md:h-[450px] max-w-[200px] md:max-w-[280px] mx-auto md:mx-0 mb-6 md:mb-0 md:flex-initial overflow-hidden shadow-2xl border-4 border-white/50 group hover:scale-[1.02] transition-transform duration-500">
+      <div className="md:flex md:items-center md:justify-center md:gap-8 md:mb-12">
+        <div className="relative rounded-2xl aspect-[9/16] md:aspect-auto min-h-[300px] md:min-h-[450px] max-w-[220px] md:max-w-[280px] mx-auto md:mx-0 mb-8 md:mb-0 md:flex-initial overflow-hidden shadow-2xl border-4 border-white/50 group hover:scale-[1.02] transition-transform duration-500">
           <div className="bg-black w-full h-full flex items-center justify-center">
             <video
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
               src="/videos/doctorvedio.mp4"
               autoPlay
               muted
@@ -32,13 +32,13 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
         </div>
 
         {/* Special Offer Section */}
-        <div className="md:flex-1 relative group md:max-w-sm">
+        <div className="md:flex-1 relative group md:max-w-sm w-full">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-teal-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
-          <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white p-4 rounded-2xl text-center shadow-2xl border border-gray-700">
-            <h2 className="text-lg md:text-xl font-bold mb-2 tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">Expert Orthodontic Care</h2>
-            <div className="w-10 h-1 bg-brandGold mx-auto rounded-full mb-3 opacity-80"></div>
+          <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white p-5 md:p-6 rounded-2xl text-center shadow-2xl border border-gray-700 w-full">
+            <h2 className="text-lg md:text-xl font-bold mb-3 tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">Expert Orthodontic Care</h2>
+            <div className="w-10 h-1 bg-brandGold mx-auto rounded-full mb-4 opacity-80"></div>
 
-            <div className="space-y-2 mb-4">
+            <div className="space-y-3 mb-6">
               <div className="flex items-center justify-center gap-2">
                 <span className="text-brandGold text-base">✓</span>
                 <p className="text-sm text-gray-300">MDS Orthodontist - Specialist-Driven</p>
@@ -55,25 +55,25 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
 
             <button
               onClick={onBookAppointment}
-              className="w-full bg-gradient-to-r from-[#d4af37] to-[#b4941f] text-black px-4 py-2 rounded-xl text-sm font-bold shadow-lg hover:shadow-yellow-500/20 hover:scale-105 transition-all duration-300 group-hover:ring-2 ring-white/20"
+              className="w-full bg-gradient-to-r from-[#d4af37] to-[#b4941f] text-black px-4 py-3 rounded-xl text-sm font-bold shadow-lg hover:shadow-yellow-500/20 hover:scale-105 transition-all duration-300 group-hover:ring-2 ring-white/20"
             >
               <div>✨ Book Free Consult</div>
-              <div className="text-[9px] font-medium mt-0.5 opacity-90">Start Your Smile Journey Today</div>
+              <div className="text-[10px] font-medium mt-0.5 opacity-90">Start Your Smile Journey Today</div>
             </button>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 mb-16 md:flex-row md:justify-center">
+      <div className="flex flex-col gap-4 mb-16 md:flex-row md:justify-center w-full px-4 md:px-0">
         <button
           onClick={onBookAppointment}
-          className="bg-[#5B216E] text-white py-4.5 px-12 rounded-full font-bold text-lg shadow-xl hover:shadow-purple-500/25 hover:-translate-y-1 transition-all md:min-w-[260px] tracking-wide"
+          className="bg-[#5B216E] text-white py-4 px-8 rounded-full font-bold text-lg shadow-xl hover:shadow-purple-500/25 hover:-translate-y-1 transition-all w-full md:w-auto md:min-w-[260px] tracking-wide"
         >
           Book Consultation
         </button>
         <a
           href="tel:+919211663616"
-          className="bg-white text-[#5B216E] border-2 border-[#5B216E] py-4.5 px-12 rounded-full font-bold text-lg text-center shadow-lg hover:bg-purple-50 hover:-translate-y-1 transition-all md:min-w-[260px] tracking-wide"
+          className="bg-white text-[#5B216E] border-2 border-[#5B216E] py-4 px-8 rounded-full font-bold text-lg text-center shadow-lg hover:bg-purple-50 hover:-translate-y-1 transition-all w-full md:w-auto md:min-w-[260px] tracking-wide"
         >
           Call Now ☏
         </a>
@@ -85,7 +85,7 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
           Why choose <span className="text-gradient-gold">SmileCity?</span>
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {[
             {
               title: "Personalized Treatment",
@@ -105,41 +105,41 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
           ].map((usp, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-[24px] text-center shadow-premium hover:shadow-premium-hover hover:-translate-y-2 transition-all duration-500 border border-gray-100/50"
+              className="bg-white p-6 md:p-8 rounded-[24px] text-center shadow-premium hover:shadow-premium-hover hover:-translate-y-2 transition-all duration-500 border border-gray-100/50"
             >
               <div className="text-5xl mb-6">{usp.icon}</div>
-              <h4 className="font-bold text-2xl text-gray-900 mb-4">{usp.title}</h4>
-              <p className="text-gray-600 leading-relaxed font-light">{usp.desc}</p>
+              <h4 className="font-bold text-xl md:text-2xl text-gray-900 mb-4">{usp.title}</h4>
+              <p className="text-gray-600 leading-relaxed font-light text-sm md:text-base">{usp.desc}</p>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="glass-card p-6 md:p-10 rounded-2xl md:max-w-4xl md:mx-auto">
+      <div className="glass-card p-6 md:p-10 rounded-2xl md:max-w-4xl md:mx-auto w-full">
         <h3 className="font-bold text-[#5B216E] mb-6 md:text-2xl text-center border-b pb-4">SmileCity Clinic USP</h3>
-        <ul className="grid md:grid-cols-2 gap-4">
+        <ul className="grid md:grid-cols-2 gap-4 text-left">
           <li className="flex items-start gap-3">
-            <span className="text-[#d4af37] text-xl">★</span>
+            <span className="text-[#d4af37] text-xl shrink-0">★</span>
             <span className="text-sm md:text-base text-gray-700"><strong>8+ Years Experience</strong> post BDS by lead specialist.</span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="text-[#d4af37] text-xl">★</span>
+            <span className="text-[#d4af37] text-xl shrink-0">★</span>
             <span className="text-sm md:text-base text-gray-700"><strong>MDS Orthodontist</strong> direct treatment (No outside consultants).</span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="text-[#d4af37] text-xl">★</span>
+            <span className="text-[#d4af37] text-xl shrink-0">★</span>
             <span className="text-sm md:text-base text-gray-700"><strong>Aligner & Invisalign</strong> certified specialist-driven practice.</span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="text-[#d4af37] text-xl">★</span>
+            <span className="text-[#d4af37] text-xl shrink-0">★</span>
             <span className="text-sm md:text-base text-gray-700"><strong>Affordable Specialist Care</strong> starting from ₹28,000.</span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="text-[#d4af37] text-xl">★</span>
+            <span className="text-[#d4af37] text-xl shrink-0">★</span>
             <span className="text-sm md:text-base text-gray-700">Flexible <strong>EMI Options</strong> available for all treatments.</span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="text-[#d4af37] text-xl">★</span>
+            <span className="text-[#d4af37] text-xl shrink-0">★</span>
             <span className="text-sm md:text-base text-gray-700">Modern <strong>Specialist-driven Clinic</strong> in Sector 65, Gurgaon.</span>
           </li>
         </ul>
